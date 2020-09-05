@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using static DAL.Migrations.Configuration;
+using static DAL.Migrations.Configuration;
 
 namespace DAL
 {
@@ -14,7 +14,7 @@ namespace DAL
         public DBContext() : base(@"Data Source=.\SQLSERVER;Initial Catalog=EnglichForChildren;Integrated Security=True")
 
         {
-            //Database.SetInitializer<DBContext>(new MyContextInitializer());
+            Database.SetInitializer<DBContext>(new MyContextInitializer());
         }
 
         public DbSet<Topic> Topics { get; set; }

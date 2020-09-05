@@ -50,6 +50,11 @@
   <ItemGroup>
     <Compile Include="DBContext.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Migrations\202009050656442_Initial_Create.cs" />
+    <Compile Include="Migrations\202009050656442_Initial_Create.Designer.cs">
+      <DependentUpon>202009050656442_Initial_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Audio.cs" />
     <Compile Include="Models\Color.cs" />
     <Compile Include="Models\Picture.cs" />
@@ -67,6 +72,10 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009050656442_Initial_Create.resx">
+      <DependentUpon>202009050656442_Initial_Create.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
