@@ -96,5 +96,11 @@ namespace SEnglish.Controllers
             //ViewBag.ActiveUserRole = GetActiveUserRole();
             return View();
         }
+
+        public ActionResult GetRoles()
+        {
+            var role = GetActiveUserRole();
+            return View(role);
+        }
     }
 }

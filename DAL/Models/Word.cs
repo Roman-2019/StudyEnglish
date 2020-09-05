@@ -15,7 +15,7 @@ namespace DAL.Models
         public int TopicId { get; set; }
         public Topic Topic { get; set; }
 
-        public ICollection<Audio> Audio { get; set; }
+        public ICollection<Audio> Audios { get; set; }
 
         public ICollection<Picture> Pictures { get; set; }
 

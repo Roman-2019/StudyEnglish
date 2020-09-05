@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "GetRoles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetRoles</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            <h2>Roles</h2>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <h2>@role</h2>
+            </td>
+        </tr>
+    }
+
+</table>

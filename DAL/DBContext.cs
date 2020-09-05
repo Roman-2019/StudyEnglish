@@ -37,7 +37,7 @@ namespace DAL
                 .HasForeignKey(x => x.TopicId);
 
             modelBuilder.Entity<Word>()
-                .HasMany(x => x.Audio)
+                .HasMany(x => x.Audios)
                 .WithRequired(x => x.Word)
                 .HasForeignKey(x => x.WordId)
                 .WillCascadeOnDelete(false);

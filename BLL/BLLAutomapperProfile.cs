@@ -15,7 +15,7 @@ namespace BLL
         {
             CreateMap<WordModel, Word>()
                 .ForMember(x => x.Topic, y => y.MapFrom(x => x.TopicModel))
-                .ForMember(x => x.Audio, y => y.MapFrom(x => x.AudioModels))
+                .ForMember(x => x.Audios, y => y.MapFrom(x => x.AudioModels))
                 .ForMember(x => x.TopicId, y => y.MapFrom(x => x.TopicModelId))
                 .ForMember(x => x.Pictures, y => y.MapFrom(x => x.PictureModels.ToList()))
                 .ReverseMap();
