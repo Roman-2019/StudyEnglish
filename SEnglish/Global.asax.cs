@@ -1,4 +1,5 @@
-﻿using SEnglish.Models;
+﻿using SEnglish.App_Start;
+using SEnglish.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -17,7 +18,7 @@ namespace SEnglish
             Database.SetInitializer<ApplicationDbContext>(new AppDbInitializer());
 
             AreaRegistration.RegisterAllAreas();
-            //LightInjectConfig.Configurate();
+            LightInjectConfig.Configurate();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);

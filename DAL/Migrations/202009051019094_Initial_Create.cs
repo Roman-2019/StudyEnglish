@@ -20,7 +20,7 @@ namespace DAL.Migrations
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Topics", t => t.TopicId, cascadeDelete: true)
-                .ForeignKey("dbo.Words", t => t.WordId)
+                .ForeignKey("dbo.Words", t => t.WordId, cascadeDelete: true)
                 .Index(t => t.WordId)
                 .Index(t => t.TopicId);
             
@@ -44,7 +44,7 @@ namespace DAL.Migrations
                         TopicId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Topics", t => t.TopicId)
+                .ForeignKey("dbo.Topics", t => t.TopicId, cascadeDelete: false)
                 .Index(t => t.TopicId);
             
             CreateTable(

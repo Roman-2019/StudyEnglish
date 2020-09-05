@@ -138,3 +138,9 @@ E:\C\SE\SEnglish\bin\LightInject.Web.xml
 E:\C\SE\SEnglish\bin\LightInject.WebApi.pdb
 E:\C\SE\SEnglish\bin\LightInject.WebApi.xml
 E:\C\SE\SEnglish\bin\LightInject.WebApi.dll.config
+E:\C\SE\SEnglish\bin\BLL.dll
+E:\C\SE\SEnglish\bin\DAL.dll
+E:\C\SE\SEnglish\bin\BLL.pdb
+E:\C\SE\SEnglish\bin\BLL.dll.config
+E:\C\SE\SEnglish\bin\DAL.pdb
+E:\C\SE\SEnglish\bin\DAL.dll.config

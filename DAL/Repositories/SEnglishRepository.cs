@@ -27,7 +27,7 @@ namespace DAL.Repositories
             _dbctx.SaveChanges();
         }
 
-        public IQueryable<T> GetAll()
+        public IEnumerable<T> GetAll()
         {
             return _dbSet.AsNoTracking();
         }

@@ -11,7 +11,7 @@ namespace DAL
 {
     public class DBContext : DbContext
     {
-        public DBContext() : base(@"Data Source=.\SQLSERVER;Initial Catalog=EnglichForChildren;Integrated Security=True")
+        public DBContext() : base(@"Data Source=.\SQLSERVER;Initial Catalog=EnglichForChildrens;Integrated Security=True")
 
         {
             Database.SetInitializer<DBContext>(new MyContextInitializer());
@@ -48,7 +48,5 @@ namespace DAL
             //    .WillCascadeOnDelete(false);
 
         }
-
-
     }
 }

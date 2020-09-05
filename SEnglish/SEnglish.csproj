@@ -181,20 +181,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AutomapperProfile.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\LightInjectConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AudiosController.cs" />
+    <Compile Include="Controllers\ColorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PictureController.cs" />
+    <Compile Include="Controllers\TopicController.cs" />
+    <Compile Include="Controllers\WordController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AudioViewModel.cs" />
+    <Compile Include="Models\ColorViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PictureViewModel.cs" />
+    <Compile Include="Models\TopicViewModel.cs" />
+    <Compile Include="Models\WordViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -604,6 +616,31 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\SendEmail.cshtml" />
     <Content Include="Views\Home\GetActiveUserRole.cshtml" />
+    <Content Include="Views\Word\Index.cshtml" />
+    <Content Include="Views\Word\Details.cshtml" />
+    <Content Include="Views\Word\Create.cshtml" />
+    <Content Include="Views\Word\Edit.cshtml" />
+    <Content Include="Views\Word\Delete.cshtml" />
+    <Content Include="Views\Picture\Index.cshtml" />
+    <Content Include="Views\Picture\Details.cshtml" />
+    <Content Include="Views\Picture\Create.cshtml" />
+    <Content Include="Views\Picture\Edit.cshtml" />
+    <Content Include="Views\Picture\Delete.cshtml" />
+    <Content Include="Views\Topic\Index.cshtml" />
+    <Content Include="Views\Topic\Details.cshtml" />
+    <Content Include="Views\Topic\Create.cshtml" />
+    <Content Include="Views\Topic\Edit.cshtml" />
+    <Content Include="Views\Topic\Delete.cshtml" />
+    <Content Include="Views\Color\Index.cshtml" />
+    <Content Include="Views\Color\Details.cshtml" />
+    <Content Include="Views\Color\Create.cshtml" />
+    <Content Include="Views\Color\Edit.cshtml" />
+    <Content Include="Views\Color\Delete.cshtml" />
+    <Content Include="Views\Audios\Index.cshtml" />
+    <Content Include="Views\Audios\Details.cshtml" />
+    <Content Include="Views\Audios\Create.cshtml" />
+    <Content Include="Views\Audios\Edit.cshtml" />
+    <Content Include="Views\Audios\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -622,6 +659,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{A7DBFF38-4E3A-461D-AA5B-3B38759EDF77}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{b82798e3-1688-4b7d-8b86-3c0a42dc373f}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

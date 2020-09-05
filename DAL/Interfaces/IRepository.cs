@@ -12,6 +12,6 @@ namespace DAL.Interfaces
         void Remove(int id);
         void Update(T model);
         T GetById(int id);
-        IQueryable<T> GetAll();
+        IEnumerable<T> GetAll();
     }
 }
