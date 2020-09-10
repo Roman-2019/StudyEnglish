@@ -2,30 +2,76 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
 
+    <p>
+        @Html.Action("GetPictureByTopic")
+    </p>
+
+<br />
 <div class="row">
+    @*<tr>*@
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <div class="main-table-row">
+            <h4 class="main-table-h4">
+                Study-Languages
+            </h4>
+            <div class="main-table-in-cell">
+                <br />
+                <p>
+                    На данном сайте мы предлагаем вам материалы для изучения английского языка,
+                    которые могут быть полезны для начинающих.
+                </p>
+                <br />
+                <br />
+                <p>
+                    По мере возможности мы будем делать обновления на нашем сайте и добавлять
+                    новые разделы, уроки, тесты и задания.
+                </p>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <div class="main-table-row">
+            <h4 class="main-table-h4">
+                Популярные страницы
+            </h4>
+            <div class="main-table-in-cell">
+                <br />
+                <ul class="main-table-list">
+                    <li class="main-table-list-li">
+                        <span>Категория: Цифры</span>
+                    </li>
+                    <li class="main-table-list-li">
+                        <span>Категория: Цвета</span>
+                    </li>
+                    <li class="main-table-list-li">
+                        <span>Категория: Фрукты</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <div class="main-table-row">
+            <h4 class="main-table-h4">
+                Вход на сайт
+            </h4>
+            <div class="main-table-in-cell">
+                <br />
+                <p>
+                    Регистрация позволяет сохранять результаты тестов и упражнений,
+                    которые вы выполняете на нашем сайте.
+                </p>
+                <br />
+                <div class="main-table-btn">
+                    <br />
+                    <a class="main-table-btn-register" href=@Html.ActionLink("Регистрация  >>", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</a>
+                </div>
+                <div class="main-table-btn">
+                    <br />
+                    <a class="main-table-btn-login" href=@Html.ActionLink("Войти  >>", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

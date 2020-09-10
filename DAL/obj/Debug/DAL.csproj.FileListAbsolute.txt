@@ -13,3 +13,5 @@ E:\C\SE\DAL\obj\Debug\DAL.dll
 E:\C\SE\DAL\obj\Debug\DAL.pdb
 E:\C\SE\DAL\obj\Debug\DAL.Migrations.Initial_Create.resources
 E:\C\SE\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\C\SE\DAL\obj\Debug\DAL.Migrations.Initial_Create1.resources
+E:\C\SE\DAL\obj\Debug\DAL.Migrations.Initial_Create2.resources

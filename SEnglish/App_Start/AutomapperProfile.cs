@@ -15,6 +15,7 @@ namespace SEnglish.App_Start
             CreateMap<TopicViewModel, TopicModel>()
                 .ForMember(x => x.WordModels, s => s.MapFrom(x => x.WordViewModels))
                 .ForMember(x => x.AudioModels, s => s.MapFrom(x => x.AudioViewModels))
+                .ForMember(x => x.PictureModels, s => s.MapFrom(x => x.PictureViewModels))
                 .ReverseMap();
             CreateMap<WordViewModel, WordModel>()
                 .ForMember(x => x.TopicModel, s => s.MapFrom(x => x.TopicViewModel))
@@ -28,7 +29,8 @@ namespace SEnglish.App_Start
                 .ForMember(x => x.WordModelId, s => s.MapFrom(x => x.WordViewModelId))
                 .ReverseMap();
             CreateMap<PictureViewModel, PictureModel>()
-                .ForMember(x => x.WordModels, s => s.MapFrom(x => x.WordViewModels))
+                .ForMember(x => x.TopicModelId, s => s.MapFrom(x => x.TopicViewModelId))
+                .ForMember(x => x.WordModelId, s => s.MapFrom(x => x.WordViewModelId))
                 .ReverseMap();
             CreateMap<ColorViewModel, ColorModel>()
                 .ForMember(x => x.WordModels, s => s.MapFrom(x => x.WordViewModels))

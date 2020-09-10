@@ -7,11 +7,11 @@
 
 <h2>Index</h2>
 
-<p>
+<p style="color:white; font-size:16px;">
     @Html.ActionLink("Create New", "Create")
 </p>
 
-<table class="table">
+<table class="table" style="color:white; font-size:16px;">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -34,7 +34,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.AudioPath)
             </td>
-            <td>
+            <td style="color:white">
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                 @Html.ActionLink("Details", "Details", new { id = item.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })

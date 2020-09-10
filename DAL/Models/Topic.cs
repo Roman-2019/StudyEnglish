@@ -13,6 +13,7 @@ namespace DAL.Models
         public bool Marker { get; set; }
 
         public ICollection<Audio> Audio { get; set; }
+        public ICollection<Picture> Pictures { get; set; }
         public ICollection<Word> Words { get; set; }
     }
 }

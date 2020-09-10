@@ -13,6 +13,11 @@ namespace DAL.Models
         public byte[] Image { get; set; }
         public string ImagePath { get; set; }
 
-        public ICollection<Word> Words { get; set; }
+        public int WordId { get; set; }
+        public Word Word { get; set; }
+
+        public int TopicId { get; set; }
+        public Topic Topic { get; set; }
+        //public ICollection<Word> Words { get; set; }
     }
 }

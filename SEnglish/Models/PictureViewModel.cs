@@ -15,7 +15,12 @@ namespace SEnglish.Models
         [DisplayName("Upload image file")]
         public string ImagePath { get; set; }
 
-        public ICollection<WordViewModel> WordViewModels { get; set; }
+        public int WordViewModelId { get; set; }
+        public WordViewModel WordViewModel { get; set; }
+        //public ICollection<WordViewModel> WordViewModels { get; set; }
+
+        public int TopicViewModelId { get; set; }
+        public TopicViewModel TopicViewModel { get; set; }
 
         public HttpPostedFileBase ImageFile { get; set; }
     }

@@ -13,6 +13,7 @@ namespace BLL.Models
         public bool Marker { get; set; }
 
         public ICollection<AudioModel> AudioModels { get; set; }
+        public ICollection<PictureModel> PictureModels { get; set; }
         public ICollection<WordModel> WordModels { get; set; }
     }
 }

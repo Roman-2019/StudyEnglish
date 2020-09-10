@@ -24,7 +24,7 @@ namespace BLL
             CreateMap<TopicModel, Topic>()
                 .ForMember(x => x.Words, y => y.MapFrom(x => x.WordModels))
                 .ForMember(x => x.Audio, y => y.MapFrom(x => x.AudioModels))
-                //.ForMember(x => x.AuthorId, y => y.MapFrom(x => x.AuthorModelId))
+                .ForMember(x => x.Pictures, y => y.MapFrom(x => x.PictureModels))
                 //.ForMember(x => x.PostId, y => y.MapFrom(x => x.PostModelId))
                 .ReverseMap();
 
@@ -33,7 +33,8 @@ namespace BLL
                 .ForMember(x => x.WordId, y => y.MapFrom(x => x.WordModelId))
                 .ReverseMap();
             CreateMap<PictureModel, Picture>()
-                .ForMember(x => x.Words, y => y.MapFrom(x => x.WordModels))
+                .ForMember(x => x.TopicId, y => y.MapFrom(x => x.TopicModelId))
+                .ForMember(x => x.WordId, y => y.MapFrom(x => x.WordModelId))
                 .ReverseMap();
             CreateMap<ColorModel, Color>()
                 .ForMember(x => x.Words, y => y.MapFrom(x => x.WordModels))

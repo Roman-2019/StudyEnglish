@@ -1,0 +1,101 @@
+﻿@model IEnumerable<SEnglish.Models.PictureAudio>
+
+@{
+    ViewBag.Title = "StartLearn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>
+    @Html.Action("GetPictureByTopic")
+</p>
+
+
+<div class="unit-area">
+    <div class="unit-title">
+        <p>
+            @foreach (var item in ViewBag.NameTopic)
+            {
+                @item.Name;
+            }
+        </p>
+    </div>
+    <div class="inBlock">
+        <h3 class="block-title">Прослушай и найди ответ</h3>
+        <p class="block-info">
+            Прослушай слово и найди для него подходящую картинку. Перетащи картинку на нужное место.
+        </p>
+        <div class="block-test">
+            <div class="hero">
+                <div class="wrapper">
+                    <ul class="list">
+                        <li style="list-style:none">
+                        </li>
+                        <li class="list__cell js-cell">
+                            <div class="list__card js-card" draggable="true">
+                                <div class="list__card-header">
+                                </div>
+                                <div class="list__card-info">
+                                    @foreach (var item in ViewBag.RndPicture1)
+                                    {
+                                        <img src="@Url.Content(item.ImagePath)" width="120" height="100" />
+                                    }
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style:none">
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list__caption">
+                            @foreach (var item in ViewBag.RndAudio2)
+                            {
+                                <audio src="@Url.Content(item.AudioPath)" controls style="width:100%"></audio>
+                            }
+                        </li>
+                        <li class="list__caption">
+                            @foreach (var item in ViewBag.RndAudio3)
+                            {
+                                <audio src="@Url.Content(item.AudioPath)" controls style="width:100%"></audio>
+                            }
+                        </li>
+                        <li class="list__caption">
+                            @foreach (var item in ViewBag.RndAudio1)
+                            {
+                                <audio src="@Url.Content(item.AudioPath)" controls style="width:100%"></audio>
+                            }
+                        </li>
+                        <li class="list__cell js-cell">
+                        </li>
+                        <li class="list__cell js-cell">
+                        </li>
+                        <li class="list__cell js-cell">
+                        </li>
+                    </ul>
+
+                    <ul class="list">
+                        <li style="list-style:none">
+                        </li>
+                        <li style="list-style:none">
+                        </li>
+                        <li style="list-style:none">
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list__cell js-cell" style="text-align:center; padding-top:20px;" >
+                            <img src="@Url.Content("~/Image/like.png")" width="120" height="100" />
+                        </li>
+                        <li class="js-answ" style="list-style:none">
+                        </li>
+                        <li class="list__cell js-cell" style="text-align:center; padding-top:20px;" >
+                            <img src="@Url.Content("~/Image/dislike.png")" width="120" height="100" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+    <script src="~/Scripts/DragAndDropCustom.js"></script>
+}

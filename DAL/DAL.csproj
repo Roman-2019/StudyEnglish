@@ -54,6 +54,14 @@
     <Compile Include="Migrations\202009051119096_Initial_Create.Designer.cs">
       <DependentUpon>202009051119096_Initial_Create.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009062052027_Initial_Create1.cs" />
+    <Compile Include="Migrations\202009062052027_Initial_Create1.Designer.cs">
+      <DependentUpon>202009062052027_Initial_Create1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009062102000_Initial_Create2.cs" />
+    <Compile Include="Migrations\202009062102000_Initial_Create2.Designer.cs">
+      <DependentUpon>202009062102000_Initial_Create2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Audio.cs" />
     <Compile Include="Models\Color.cs" />
@@ -75,6 +83,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202009051119096_Initial_Create.resx">
       <DependentUpon>202009051119096_Initial_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009062052027_Initial_Create1.resx">
+      <DependentUpon>202009062052027_Initial_Create1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009062102000_Initial_Create2.resx">
+      <DependentUpon>202009062102000_Initial_Create2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

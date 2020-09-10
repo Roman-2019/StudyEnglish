@@ -13,7 +13,12 @@ namespace BLL.Models
         public byte[] Image { get; set; }
         public string ImagePath { get; set; }
 
+        public int WordModelId { get; set; }
+        public WordModel WordModel { get; set; }
 
-        public ICollection<WordModel> WordModels { get; set; }
+        public int TopicModelId { get; set; }
+        public TopicModel TopicModel { get; set; }
+
+        //public ICollection<WordModel> WordModels { get; set; }
     }
 }

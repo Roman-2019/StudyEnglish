@@ -1,0 +1,23 @@
+﻿<h2>Выберите тему из выпадающего списка</h2>
+
+<table style="font-size: 16px">
+    <tr>
+        <th width="40%">
+            <div class="index-category">
+                Выберите тему
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Тема
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        @foreach (var item in ViewBag.TopicId)
+                        {
+                            <li><a href="~/Home/StartLearn/@item.Id">@item.Name</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </th>
+    </tr>
+</table>

@@ -12,5 +12,6 @@ namespace SEnglish.Models
         public bool Marker { get; set; }
         public ICollection<WordViewModel> WordViewModels { get; set; }
         public ICollection<AudioViewModel> AudioViewModels { get; set; }
+        public ICollection<PictureViewModel> PictureViewModels { get; set; }
     }
 }

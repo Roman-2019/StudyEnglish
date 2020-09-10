@@ -194,6 +194,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PictureController.cs" />
+    <Compile Include="Controllers\SaveResultController.cs" />
     <Compile Include="Controllers\TopicController.cs" />
     <Compile Include="Controllers\WordController.cs" />
     <Compile Include="Global.asax.cs">
@@ -204,6 +205,7 @@
     <Compile Include="Models\ColorViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PictureAudio.cs" />
     <Compile Include="Models\PictureViewModel.cs" />
     <Compile Include="Models\TopicViewModel.cs" />
     <Compile Include="Models\WordViewModel.cs" />
@@ -221,6 +223,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\CheckAnswer.js" />
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
     <Content Include="Scripts\ckeditor\CHANGES.html" />
     <Content Include="Scripts\ckeditor\ckeditor.asp" />
@@ -570,6 +573,7 @@
     <Content Include="Scripts\ckeditor\skins\v2\skin.js" />
     <Content Include="Scripts\ckeditor\skins\v2\templates.css" />
     <Content Include="Scripts\ckeditor\themes\default\theme.js" />
+    <Content Include="Scripts\DragAndDropCustom.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -642,11 +646,14 @@
     <Content Include="Views\Audios\Edit.cshtml" />
     <Content Include="Views\Audios\Delete.cshtml" />
     <Content Include="Views\Home\GetRoles.cshtml" />
+    <Content Include="Views\Home\StartLearn.cshtml" />
+    <Content Include="Views\Home\GetPictureByTopic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Audio\" />
     <Folder Include="Image\" />
+    <Folder Include="Views\SaveResult\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
